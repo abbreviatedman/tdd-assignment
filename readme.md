@@ -79,8 +79,8 @@ If you haven't created a test yet, you will get an error. **This error is normal
 1. Write a failing test for the first requirement. Once you've done so, run Jest to see the test fail.
 
 ```javascript
-it('should return 0 if there are no items in the cart', () => {
-  expect(getCartTotal([])).toBe(0);
+it('should return 0 dollars and 0 cents if there are no items in the cart', () => {
+  expect(getCartTotal([])).toBe('$0.00');
 })
 ```
 
@@ -93,7 +93,7 @@ You can call it whatever you'd like and write whatever code you'd like, of cours
 ``` javascript
 function getCartTotal(cart) {
   if (cart.length === 0) {
-    return 0;
+    return '$0.00';
   }
 }
 ```
