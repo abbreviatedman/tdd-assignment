@@ -5,8 +5,8 @@ In today's assignment, we will be using TDD in a real-world scenario, to calcula
 ### Requirements
 
 1. The function should take in an array of cart items, where each item is an object with a name, price, weight, and quantity.
-2. The function should return the total price of all items in the cart added together, as a user-facing string with dollars and cents.
-3. The function will also take in a string representing the state the user is in, using it to adjust the price accordingly.
+2. The function should return the total price of all items in the cart added together, as a user-facing string with dollars and cents, e.g. "$4.00" or "$15.50"
+3. The function will also take in a string representing the state the user is in, using it to adjust the price according to the tax for that state.
 4. The function will add a shipping cost that's based on the total weight of the cart.
 5. The function will remove the shipping cost if the total price without shipping or tax reaches a certain threshold.
 
